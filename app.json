@@ -1,17 +1,13 @@
 {
     "id": "com.vitrum",
     "sdk": 2,
-    "name": {
-        "en": "Vitrum"
-    },
-    "description": {
-        "en": "App for Vitrum switches"
-    },
+    "name": { "en": "Vitrum" },
+    "description": { "en": "App for Vitrum switches" },
     "category": "lights",
     "version": "1.0.0",
-    "compatibility": ">=1.5.0",
+    "compatibility": ">=1.5.3",
     "author": {
-        "name": "Dmitrii Ponomarev",
+        "name": "Dmitriy Ponomarev",
         "email": "diamond5170@gmail.com"
     },
     "images": {
@@ -21,9 +17,7 @@
     "drivers": [
     {
       "id": "vitrum_1_sat_eu",
-      "name": {
-        "en": "Vitrum I Wireless EU"
-      },
+      "name": { "en": "Vitrum I Wireless EU" },
       "images": {
         "large": "/drivers/vitrum_1_sat_eu/assets/images/large.png",
         "small": "/drivers/vitrum_1_sat_eu/assets/images/small.png"
@@ -31,38 +25,27 @@
       "zwave": {
         "manufacturerId": 266,
         "productTypeId": 5120,
-        "productId": [
-          24832
-        ],
+        "productId": [ 24832 ],
         "learnmode": {
-          "instruction": {
-            "en": "Press button to include. Hold the button for 8 seconds to exclude"
-          }
+          "instruction": { "en": "Press button to include. Hold the button for 8 seconds to exclude" }
         },
-        "associationGroups": [ 1 ],
+        "associationGroups": [],
         "associationGroupsMultiChannel": [ 1 ],
         "multiChannelNodes": {
           "1": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_1_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 1"
-            }
+            "name": { "en": "Switch 1" }
           }
         }
       },
-      "capabilities": [
-      ],
+      "capabilities": [],
       "class": "socket"
     },
     {
       "id": "vitrum_2_sat_eu",
-      "name": {
-        "en": "Vitrum II Wireless EU"
-      },
+      "name": { "en": "Vitrum II Wireless EU" },
       "images": {
         "large": "/drivers/vitrum_2_sat_eu/assets/images/large.png",
         "small": "/drivers/vitrum_2_sat_eu/assets/images/small.png"
@@ -70,48 +53,33 @@
       "zwave": {
         "manufacturerId": 266,
         "productTypeId": 4352,
-        "productId": [
-          18944
-        ],
+        "productId": [ 18944 ],
         "learnmode": {
-          "instruction": {
-            "en": "Press left button to include. Hold the left button for 8 seconds to exclude"
-          }
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
-        "associationGroups": [ 1, 2 ],
+        "associationGroups": [],
         "associationGroupsMultiChannel": [ 1, 2 ],
         "multiChannelNodes": {
           "1": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_2_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 1"
-            }
+            "name": { "en": "Switch 1" }
           },
           "2": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_2_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 2"
-            }
+            "name": { "en": "Switch 2" }
           }
         }
       },
-      "capabilities": [
-      ],
+      "capabilities": [],
       "class": "socket"
     },
     {
       "id": "vitrum_3_sat_eu",
-      "name": {
-        "en": "Vitrum III Wireless EU"
-      },
+      "name": { "en": "Vitrum III Wireless EU" },
       "images": {
         "large": "/drivers/vitrum_3_sat_eu/assets/images/large.png",
         "small": "/drivers/vitrum_3_sat_eu/assets/images/small.png"
@@ -119,58 +87,39 @@
       "zwave": {
         "manufacturerId": 266,
         "productTypeId": 5120,
-        "productId": [
-          25344
-        ],
+        "productId": [ 25344 ],
         "learnmode": {
-          "instruction": {
-            "en": "Press left button to include. Hold the left button for 8 seconds to exclude"
-          }
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
-        "associationGroups": [ 1, 2, 3 ],
+        "associationGroups": [],
         "associationGroupsMultiChannel": [ 1, 2, 3 ],
         "multiChannelNodes": {
           "1": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_3_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 1"
-            }
+            "name": { "en": "Switch 1" }
           },
           "2": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_3_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 2"
-            }
+            "name": { "en": "Switch 2" }
           },
           "3": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_3_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 3"
-            }
+            "name": { "en": "Switch 3" }
           }
         }
       },
-      "capabilities": [
-      ],
+      "capabilities": [],
       "class": "socket"
     },
     {
       "id": "vitrum_4_sat_eu",
-      "name": {
-        "en": "Vitrum IV Wireless EU"
-      },
+      "name": { "en": "Vitrum IV Wireless EU" },
       "images": {
         "large": "/drivers/vitrum_4_sat_eu/assets/images/large.png",
         "small": "/drivers/vitrum_4_sat_eu/assets/images/small.png"
@@ -178,68 +127,46 @@
       "zwave": {
         "manufacturerId": 266,
         "productTypeId": 13312,
-        "productId": [
-          25600
-        ],
+        "productId": [ 25600 ],
         "learnmode": {
-          "instruction": {
-            "en": "Press left button to include. Hold the left button for 8 seconds to exclude"
-          }
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
-        "associationGroups": [ 1, 2, 3, 4 ],
+        "associationGroups": [],
         "associationGroupsMultiChannel": [ 1, 2, 3, 4 ],
         "multiChannelNodes": {
           "1": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_4_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 1"
-            }
+            "name": { "en": "Switch 1" }
           },
           "2": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
+            "capabilities": [ "onoff", "dim"
             ],
             "icon": "/drivers/vitrum_4_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 2"
-            }
+            "name": { "en": "Switch 2" }
           },
           "3": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_4_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 3"
-            }
+            "name": { "en": "Switch 3" }
           },
           "4": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_4_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 4"
-            }
+            "name": { "en": "Switch 4" }
           }
         }
       },
-      "capabilities": [
-      ],
+      "capabilities": [],
       "class": "socket"
     },
     {
       "id": "vitrum_6_sat_eu",
-      "name": {
-        "en": "Vitrum VI Wireless EU"
-      },
+      "name": { "en": "Vitrum VI Wireless EU" },
       "images": {
         "large": "/drivers/vitrum_6_sat_eu/assets/images/large.png",
         "small": "/drivers/vitrum_6_sat_eu/assets/images/small.png"
@@ -247,81 +174,52 @@
       "zwave": {
         "manufacturerId": 266,
         "productTypeId": 1400,
-        "productId": [
-          6600
-        ],
+        "productId": [ 6600 ],
         "learnmode": {
-          "instruction": {
-            "en": "Press left button to include. Hold the left button for 8 seconds to exclude"
-          }
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
-        "associationGroups": [ 1, 2, 3, 4, 5, 6 ],
+        "associationGroups": [],
         "associationGroupsMultiChannel": [ 1, 2, 3, 4, 5, 6 ],
         "multiChannelNodes": {
           "1": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 1"
-            }
+            "name": { "en": "Switch 1" }
           },
           "2": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 2"
-            }
+            "name": { "en": "Switch 2" }
           },
           "3": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 3"
-            }
+            "name": { "en": "Switch 3" }
           },
           "4": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 4"
-            }
+            "name": { "en": "Switch 4" }
           },
           "5": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 5"
-            }
+            "name": { "en": "Switch 5" }
           },
           "6": {
             "class": "socket",
-            "capabilities": [
-              "onoff", "dim"
-            ],
+            "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_6_sat_eu/assets/icon.svg",
-            "name": {
-              "en": "Switch 6"
-            }
+            "name": { "en": "Switch 6" }
           }
         }
       },
-      "capabilities": [
-      ],
+      "capabilities": [],
       "class": "socket"
     }
     ]

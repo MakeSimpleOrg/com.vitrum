@@ -2,7 +2,7 @@
 
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
-class Vitrum3SatEUDevice extends ZwaveDevice {
+class Vitrum6SatEUDevice extends ZwaveDevice {
 	async onMeshInit() {
 		//this.enableDebug();
 
@@ -21,4 +21,4 @@ class Vitrum3SatEUDevice extends ZwaveDevice {
 	}
 }
 
-module.exports = Vitrum3SatEUDevice;
+module.exports = Vitrum6SatEUDevice;
