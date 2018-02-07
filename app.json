@@ -4,7 +4,7 @@
     "name": { "en": "Vitrum" },
     "description": { "en": "App for Vitrum switches" },
     "category": "lights",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "compatibility": ">=1.5.3",
     "author": {
         "name": "Dmitriy Ponomarev",
