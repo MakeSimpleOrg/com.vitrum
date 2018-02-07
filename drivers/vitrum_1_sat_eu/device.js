@@ -14,7 +14,10 @@ class Vitrum1SatEUDevice extends ZwaveDevice {
 			this.registerCapability('dim', 'SWITCH_MULTILEVEL');
 
 			this.registerReportListener('BASIC', 'BASIC_SET', ( rawReport, parsedReport ) => {
-				//console.log('Value: ', rawReport.Value / 99);
+				if(this.getCapabilityValue('onoff') == true && rawReport.Value == 0)
+					this.setCapabilityValue('onoff', false);
+				else if(this.getCapabilityValue('onoff') == false && rawReport.Value > 0)
+					this.setCapabilityValue('onoff', true);
 				this.setCapabilityValue('dim', rawReport.Value / 99);
 			});
 		}
