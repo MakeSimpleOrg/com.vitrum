@@ -126,7 +126,7 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 13312,
+        "productTypeId": 5120,
         "productId": [ 25600 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
@@ -173,8 +173,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 1400,
-        "productId": [ 6600 ],
+        "productTypeId": 5120,
+        "productId": [ 26112 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
