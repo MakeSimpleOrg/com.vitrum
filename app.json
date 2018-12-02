@@ -4,7 +4,7 @@
     "name": { "en": "Vitrum" },
     "description": { "en": "App for Vitrum switches" },
     "category": "lights",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "compatibility": ">=1.5.3",
     "author": {
         "name": "Dmitriy Ponomarev",
@@ -318,6 +318,52 @@
             "capabilities": [ "onoff", "dim" ],
             "icon": "/drivers/vitrum_2_sat_bs/assets/icon.svg",
             "name": { "en": "Switch 2" }
+          }
+        }
+      },
+      "capabilities": [],
+      "class": "socket"
+    },
+    {
+      "id": "vitrum_4_sat_bs",
+      "name": { "en": "Vitrum IV Wireless BS" },
+      "images": {
+        "large": "/drivers/vitrum_4_sat_bs/assets/images/large.png",
+        "small": "/drivers/vitrum_4_sat_bs/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 266,
+        "productTypeId": 9216,
+        "productId": [ 41984 ],
+        "learnmode": {
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
+        },
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [ 1, 2, 3, 4 ],
+        "multiChannelNodes": {
+          "1": {
+            "class": "socket",
+            "capabilities": [ "onoff", "dim" ],
+            "icon": "/drivers/vitrum_4_sat_bs/assets/icon.svg",
+            "name": { "en": "Switch 1" }
+          },
+          "2": {
+            "class": "socket",
+            "capabilities": [ "onoff", "dim" ],
+            "icon": "/drivers/vitrum_4_sat_bs/assets/icon.svg",
+            "name": { "en": "Switch 2" }
+          },
+          "3": {
+            "class": "socket",
+            "capabilities": [ "onoff", "dim" ],
+            "icon": "/drivers/vitrum_4_sat_bs/assets/icon.svg",
+            "name": { "en": "Switch 3" }
+          },
+          "4": {
+            "class": "socket",
+            "capabilities": [ "onoff", "dim" ],
+            "icon": "/drivers/vitrum_4_sat_bs/assets/icon.svg",
+            "name": { "en": "Switch 4" }
           }
         }
       },
