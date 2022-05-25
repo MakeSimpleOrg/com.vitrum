@@ -4,7 +4,7 @@
     "name": { "en": "Vitrum" },
     "description": { "en": "App for Vitrum switches" },
     "category": "lights",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "compatibility": ">=1.5.3",
     "author": {
         "name": "Dmitriy Ponomarev",
@@ -24,8 +24,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 5120,
-        "productId": [ 24832 ],
+        "productTypeId": [ 4352, 5120, 13312, 17408 ],
+        "productId": [ 18688, 24832 ],
         "learnmode": {
           "instruction": { "en": "Press button to include. Hold the button for 8 seconds to exclude" }
         },
@@ -52,8 +52,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 5120,
-        "productId": [ 25088 ],
+        "productTypeId": [ 4352, 5120, 13312, 17408 ],
+        "productId": [ 18944, 25088 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -86,8 +86,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 5120,
-        "productId": [ 25344 ],
+        "productTypeId": [ 4352, 5120, 13312, 17408 ],
+        "productId": [ 19200, 25344 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -126,8 +126,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 5120,
-        "productId": [ 25600 ],
+        "productTypeId": [ 4352, 5120, 13312, 17408 ],
+        "productId": [ 19456, 25600 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -173,8 +173,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 5120,
-        "productId": [ 26112 ],
+        "productTypeId": [ 4352, 5120, 13312, 17408 ],
+        "productId": [ 19712, 26112 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -231,8 +231,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 4608,
-        "productId": [ 20736 ],
+        "productTypeId": [ 4608, 4609, 12800, 16896 ],
+        "productId": [ 20736, 20737, 37120 ],
         "learnmode": {
           "instruction": { "en": "Press button to include. Hold button for 8 seconds to exclude" }
         },
@@ -259,8 +259,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 4608,
-        "productId": [ 20992 ],
+        "productTypeId": [ 4608, 4609, 12800, 16896 ],
+        "productId": [ 20992, 20993, 37376 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -293,8 +293,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 4608,
-        "productId": [ 21248 ],
+        "productTypeId": [ 4608, 4609, 12800, 16896 ],
+        "productId": [ 21248, 21249, 37632 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
@@ -325,6 +325,110 @@
       "class": "socket"
     },
     {
+      "id": "vitrum_4_onoff_eu",
+      "name": { "en": "Vitrum IV On-Off EU" },
+      "images": {
+        "large": "/drivers/vitrum_4_onoff_eu/assets/images/large.png",
+        "small": "/drivers/vitrum_4_onoff_eu/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 266,
+        "productTypeId": [ 4608, 4609, 12800, 16896 ],
+        "productId": [ 21504, 21505, 37888 ],
+        "learnmode": {
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
+        },
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [ 1, 2, 3, 4 ],
+        "multiChannelNodes": {
+          "1": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_4_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 1" }
+          },
+          "2": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_4_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 2" }
+          },
+          "3": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_4_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 3" }
+          },
+          "4": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_4_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 4" }
+          }
+        }
+      },
+      "capabilities": [],
+      "class": "socket"
+    },
+    {
+      "id": "vitrum_6_onoff_eu",
+      "name": { "en": "Vitrum VI On-Off EU" },
+      "images": {
+        "large": "/drivers/vitrum_6_onoff_eu/assets/images/large.png",
+        "small": "/drivers/vitrum_6_onoff_eu/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 266,
+        "productTypeId": [ 4608, 4609, 12800, 16896 ],
+        "productId": [ 22016, 22017, 38400 ],
+        "learnmode": {
+          "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
+        },
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [ 1, 2, 3, 4, 5, 6 ],
+        "multiChannelNodes": {
+          "1": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 1" }
+          },
+          "2": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 2" }
+          },
+          "3": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 3" }
+          },
+          "4": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 4" }
+          },
+          "5": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 5" }
+          },
+          "6": {
+            "class": "socket",
+            "capabilities": [ "onoff" ],
+            "icon": "/drivers/vitrum_6_onoff_eu/assets/icon.svg",
+            "name": { "en": "Switch 6" }
+          }
+        }
+      },
+      "capabilities": [],
+      "class": "socket"
+    },
+    {
       "id": "vitrum_1_sat_bs",
       "name": { "en": "Vitrum I Wireless BS" },
       "images": {
@@ -333,8 +437,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 9216,
-        "productId": [ 41216 ],
+        "productTypeId": [ 8448, 9216 ],
+        "productId": [ 35072, 41216 ],
         "learnmode": {
           "instruction": { "en": "Press button to include. Hold the button for 8 seconds to exclude" }
         },
@@ -361,8 +465,8 @@
       },
       "zwave": {
         "manufacturerId": 266,
-        "productTypeId": 9216,
-        "productId": [ 41472 ],
+        "productTypeId": [ 8448, 9216 ],
+        "productId": [ 35328, 41472 ],
         "learnmode": {
           "instruction": { "en": "Press left button to include. Hold the left button for 8 seconds to exclude" }
         },
